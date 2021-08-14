@@ -6,4 +6,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="developer_description">TechKnow is a group of like-minded individuals committed to excellence and aims to connect people together through the use of technology.</string>
+    <string name="bigas_android">Bigkas is an Android application that outputs the detected Filipino Sign Language in real time and displays the corresponding fingerspelling for the text entered.</string>
+    <string name="what_is_nbigkas">What is\nBigkas.</string>
+    <string name="how_to_use_bigkas">How to use Bigkas?</string>
+
+    <string name="step_1">Open Bigkas application and select the scan button.</string>
+    <string name="step_2">Position the camera at waist level to start the detection. Upong successful detection, the text and speech output will be displayed.</string>
+    <string name="step_3">To translate words into its corresponding fingerspelling input the text to be translated..</string>
 </resources>
