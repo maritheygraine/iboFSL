@@ -32,7 +32,7 @@
             android:layout_marginStart="4dp"
             android:layout_toEndOf="@id/icon"
             android:fontFamily="@font/roboto_bold"
-            android:text="@string/what_is_nbigkas"
+            android:text="@string/bigkas"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/icon" />
@@ -73,7 +73,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/lMustard"
+                app:cardBackgroundColor="@color/Mustard"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="5dp"
                 app:cardUseCompatPadding="true">
@@ -87,7 +87,7 @@
                     android:paddingTop="32dp"
                     android:paddingEnd="@dimen/card_padding"
                     android:paddingBottom="32dp"
-                    android:text="@string/bigas_android"
+                    android:text="@string/bigkas_description"
                     android:textColor="@color/white" />
 
             </androidx.cardview.widget.CardView>

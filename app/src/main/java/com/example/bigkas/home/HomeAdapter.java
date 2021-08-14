@@ -62,7 +62,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
         @Override
         public void bind(String description) {
             this.description.setText(description);
-            this.number.setText(String.valueOf(getAdapterPosition()));
+            this.number.setText(String.valueOf(getAdapterPosition()+1));
         }
     }
 

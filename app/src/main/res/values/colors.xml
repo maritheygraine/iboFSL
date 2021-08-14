@@ -11,8 +11,9 @@
     <color name="light_white">#D2D2D2</color>
     <color name="gray">#413F51</color>
     <color name="Purple">#7939FE</color>
-    <color name="lMustard">#EBA92A</color>
-    <color name="dMustard">#E4960E</color>
+    <color name="Mustard">#EAA82C</color>
     <color name="dBlue">#01114F</color>
     <color name="offwhite">#f8f8ff</color>
+    <color name="light_purple">#F1EAFF</color>
+
 </resources>
