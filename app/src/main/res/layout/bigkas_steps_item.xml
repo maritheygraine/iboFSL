@@ -3,11 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/light_purple"
     app:cardCornerRadius="16dp"
     app:cardElevation="6dp"
-    app:cardUseCompatPadding="true"
-    app:cardBackgroundColor="@color/light_purple">
+    app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
