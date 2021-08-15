@@ -9,7 +9,5 @@
     <item android:id="@+id/nav_fingerspelling"
         android:title="Home"
         android:icon="@drawable/round_keyboard_alt_24"/>
-    <item android:id="@+id/nav_about"
-        android:title="Home"
-        android:icon="@drawable/round_contact_support_24"/>
+
 </menu>

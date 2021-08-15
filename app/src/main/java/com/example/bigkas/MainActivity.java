@@ -33,9 +33,6 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.nav_fingerspelling:
                     fragment = new Fingerspelling();
                     break;
-                case R.id.nav_about:
-                    fragment = new About();
-                    break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.body_container, fragment).commit();
             return true;

@@ -21,9 +21,9 @@ import org.jetbrains.annotations.NotNull;
 
 public class SplashScreen extends AppCompatActivity {
     ImageView logo;
-    Animation topAnim, botAnim, obAnim;
+    Animation topAnim, obAnim;
     SharedPreferences onBoardingScreen;
-
+    private static int SPLASH_SCREEN = 3000;
     private static final int NUM_PAGES = 3;
     private ViewPager viewPager;
     private ScreenSlidePagerAdapter pagerAdapter;
@@ -43,7 +43,6 @@ public class SplashScreen extends AppCompatActivity {
 
             //Animation
             topAnim = AnimationUtils.loadAnimation(this,R.anim.top_animation);
-            //botAnim = AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
             obAnim = AnimationUtils.loadAnimation(this,R.anim.ob_anim);
             logo = findViewById(R.id.logo);
 
@@ -53,10 +52,21 @@ public class SplashScreen extends AppCompatActivity {
 
             logo.setAnimation(topAnim);
             viewPager.startAnimation(obAnim);
-            //slogan - can apply bottom animation
+
         }
         else {
-            startActivity(new Intent(this,MainActivity.class));
+            topAnim = AnimationUtils.loadAnimation(this,R.anim.top_animation);
+            logo = findViewById(R.id.logo);
+            logo.setAnimation(topAnim);
+
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent intent = new Intent(SplashScreen.this,MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+            },SPLASH_SCREEN);
         }
 
 

@@ -10,6 +10,6 @@
     <string name="step_1">Open Bigkas application and select the scan button.</string>
     <string name="step_2">Position the camera at waist level to start the detection. Upon successful detection, the text and speech output will be displayed.</string>
     <string name="step_3">To translate words into its corresponding fingerspelling, input the text to be translated.</string>
-    <string name="bigkas">What is bigkas.</string>
+    <string name="bigkas">Bigkas.</string>
     <string name="how_to_use_bigkas">How to use Bigkas?</string>
 </resources>

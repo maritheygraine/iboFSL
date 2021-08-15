@@ -6,7 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     app:cardCornerRadius="16dp"
     app:cardElevation="6dp"
-    app:cardUseCompatPadding="true">
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/light_purple">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
