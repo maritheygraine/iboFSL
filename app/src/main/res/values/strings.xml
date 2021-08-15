@@ -12,4 +12,21 @@
     <string name="step_3">To translate words into its corresponding fingerspelling, input the text to be translated.</string>
     <string name="bigkas">Bigkas.</string>
     <string name="how_to_use_bigkas">How to use Bigkas?</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="techknow_feutech_gmail_com">techknow.feutech@gmail.com</string>
+    <string name="developer">Developer</string>
+    <string name="techknow">TechKnow</string>
+    <string name="let_s">Let\'s</string>
+    <string name="communicate">communicate</string>
+    <string name="skip">SKIP</string>
+    <string name="fsl">FSL</string>
+    <string name="recognition">recognition</string>
+    <string name="fingerspelling">fingerspelling</string>
+    <string name="get_started">Get Started</string>
+    <string name="clear">Clear</string>
+    <string name="translate">Translate</string>
+    <string name="write_something">Write something</string>
+    <string name="translator">Translator</string>
+    <string name="fingerspelling_formal">Fingerspelling</string>
+    <string name="fingerspell">Fingerspell</string>
 </resources>

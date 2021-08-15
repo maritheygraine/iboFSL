@@ -2,25 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text_input_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".home.HomeFragment"
-    android:id="@+id/home_linear">
+    tools:context=".home.HomeFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/artificial_toolbar"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
         android:paddingStart="16dp"
-        android:paddingTop="24dp"
-        android:paddingEnd="16dp"
-        android:paddingBottom="8dp">
+        android:paddingEnd="16dp">
 
         <ImageView
-            android:id="@+id/icon"
+            android:id="@+id/bigkas_icon"
             android:layout_width="42dp"
             android:layout_height="42dp"
+            android:layout_centerVertical="true"
             android:src="@drawable/bigkas_logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -32,37 +32,24 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="4dp"
             android:layout_marginBottom="4dp"
-            android:layout_toEndOf="@id/icon"
+            android:layout_toEndOf="@id/bigkas_icon"
             android:fontFamily="@font/roboto_bold"
             android:text="@string/bigkas"
             android:textColor="@color/black"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/icon" />
+            android:textSize="20sp" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/option_menu"
-            app:cardUseCompatPadding="true"
+        <ImageView
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/hamburger"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="16dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground"
-            app:cardCornerRadius="4dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_dehaze_24"
+            app:tint="@color/black" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:src="@drawable/ic_baseline_dehaze_24" />
-
-        </androidx.cardview.widget.CardView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -92,7 +79,6 @@
                     android:paddingEnd="@dimen/card_padding"
                     android:paddingBottom="32dp"
                     android:text="@string/bigkas_description"
-                    android:textSize="16dp"
                     android:textColor="@color/white" />
 
             </androidx.cardview.widget.CardView>
@@ -104,7 +90,6 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="16dp"
-                android:fontFamily="@font/roboto_medium"
                 android:text="@string/how_to_use_bigkas"
                 android:textColor="@color/black" />
 
@@ -112,7 +97,6 @@
                 android:id="@+id/bigkas_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="32dp"
                 android:nestedScrollingEnabled="false"
                 android:overScrollMode="never"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"

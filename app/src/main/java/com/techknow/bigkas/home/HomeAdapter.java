@@ -1,4 +1,4 @@
-package com.example.bigkas.home;
+package com.techknow.bigkas.home;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.bigkas.R;
+import com.techknow.bigkas.R;
 
 import java.util.ArrayList;
 import java.util.List;

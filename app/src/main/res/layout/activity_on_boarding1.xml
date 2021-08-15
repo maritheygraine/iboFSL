@@ -4,18 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OnBoarding_1"
+    tools:context=".splash.OnBoardingPageFragment"
     android:background="@color/offwhite">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="24dp"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_end="24dp"
+        android:orientation="vertical"/>
 
     <ImageView
         android:id="@+id/ob1_pic"
-        android:layout_width="317dp"
-        android:layout_height="347dp"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
         android:layout_marginStart="33dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="50dp"
+        app:layout_constraintVertical_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ob_1" />
@@ -26,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/roboto_regular"
-        android:text="Let's"
+        android:text="@string/let_s"
         android:textColor="@color/black"
         android:textSize="45sp"
         app:layout_constraintStart_toStartOf="@+id/ob1_pic"
@@ -37,35 +51,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_bold"
-        android:text="communicate"
+        android:text="@string/communicate"
         android:textColor="@color/black"
         android:textSize="45sp"
         app:layout_constraintStart_toStartOf="@+id/lets"
         app:layout_constraintTop_toBottomOf="@+id/lets" />
 
     <TextView
+        android:paddingBottom="24dp"
+        android:layout_marginEnd="16dp"
         android:id="@+id/textView3"
-        android:layout_width="314dp"
-        android:layout_height="98dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/roboto_regular"
         android:lineSpacingExtra="7dp"
         android:text="@string/ob_1"
         android:textColor="@color/gray"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
         app:layout_constraintStart_toStartOf="@+id/communincate"
         app:layout_constraintTop_toBottomOf="@+id/communincate" />
 
     <ImageView
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/imageView3"
         android:layout_width="49dp"
         android:layout_height="11dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:srcCompat="@drawable/page_1" />
 
     <TextView
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp"
         android:id="@+id/skip_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -73,7 +95,7 @@
         android:layout_marginTop="4dp"
         android:fontFamily="@font/roboto_medium"
         android:onClick="skip"
-        android:text="SKIP"
+        android:text="@string/skip"
         android:textColor="@color/gray"
         app:layout_constraintEnd_toEndOf="@+id/textView3"
         app:layout_constraintHorizontal_bias="1.0"

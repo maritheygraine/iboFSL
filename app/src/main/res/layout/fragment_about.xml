@@ -5,28 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/offwhite"
-    tools:context=".About">
+    tools:context=".AboutFragment">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="94dp"
         android:layout_height="164dp"
-        android:layout_marginTop="90dp"
         android:src="@drawable/techknow_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
 
     <TextView
+        app:layout_constraintVertical_chainStyle="spread_inside"
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="31dp"
         android:fontFamily="@font/roboto_bold"
-        android:text="TechKnow"
+        android:text="@string/techknow"
         android:textColor="@color/black"
         android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -37,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         android:fontFamily="@font/roboto_light"
-        android:text="Developer"
+        android:text="@string/developer"
         android:textColor="@color/gray"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,6 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
+        app:layout_constraintVertical_chainStyle="spread_inside"
         android:id="@+id/textView5"
         android:layout_width="280dp"
         android:layout_height="95dp"
@@ -54,33 +57,35 @@
         android:text="@string/developer_description"
         android:textAlignment="center"
         android:textColor="#707070"
+        app:layout_constraintBottom_toTopOf="@id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
+        app:layout_constraintVertical_chainStyle="spread_inside"
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="49dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="Contact Us"
+        android:text="@string/contact_us"
         android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
+        app:layout_constraintVertical_chainStyle="spread_inside"
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/roboto_regular"
-        android:text="techknow.feutech@gmail.com"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/techknow_feutech_gmail_com"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
