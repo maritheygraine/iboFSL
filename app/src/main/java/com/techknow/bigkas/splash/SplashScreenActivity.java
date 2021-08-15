@@ -27,14 +27,13 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        final OnBoardingPrefs boardingPrefs = new OnBoardingPrefs(getApplicationContext());
+        final boolean isFinished = OnBoardingPrefs.getOnBoardingPrefs(getApplicationContext());
 
         logo = findViewById(R.id.logo);
         topAnim = animate(R.anim.top_animation);
 
-        if (boardingPrefs.getOnBoardingPrefs()) {
+        if (isFinished) {
             //Animation
-
             obAnim = animate(R.anim.ob_anim);
 
             final LiquidPager liquidPager = findViewById(R.id.pager);

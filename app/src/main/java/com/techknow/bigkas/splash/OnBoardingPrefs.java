@@ -5,13 +5,9 @@ import android.content.SharedPreferences;
 
 public class OnBoardingPrefs {
 
-    private final SharedPreferences preferences;
+    public static Boolean getOnBoardingPrefs(Context context) {
+        final SharedPreferences preferences = context.getSharedPreferences("onBoardingScreen", Context.MODE_PRIVATE);
 
-    public OnBoardingPrefs(Context context) {
-       preferences = context.getSharedPreferences("onBoardingScreen", Context.MODE_PRIVATE);
-    }
-
-    public Boolean getOnBoardingPrefs() {
         final boolean isFirstTime = preferences.getBoolean("isFirstTime", true);
 
         if (isFirstTime) {
