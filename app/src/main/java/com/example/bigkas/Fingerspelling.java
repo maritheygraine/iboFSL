@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +17,12 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class Fingerspelling extends Fragment {
+
+    //Declarations
+    TextView textView;
+    EditText editText;
+    Button clear_btn, translate_btn;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +68,27 @@ public class Fingerspelling extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fingerspelling, container, false);
+        View view =  inflater.inflate(R.layout.fragment_fingerspelling, container, false);
+
+        editText = view.findViewById(R.id.normal_txt);
+        clear_btn = view.findViewById(R.id.clear_btn);
+        translate_btn = view.findViewById(R.id.translate_btn);
+        textView =  view.findViewById(R.id.fingerspell_view);
+
+        clear_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText.getText().clear();
+            }
+        });
+
+        translate_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String translated = editText.getText().toString();
+                textView.setText(translated);
+            }
+        });
+        return view;
     }
 }
