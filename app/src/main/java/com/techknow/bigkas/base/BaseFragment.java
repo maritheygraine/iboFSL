@@ -1,5 +1,7 @@
 package com.techknow.bigkas.base;
 
+import static androidx.navigation.fragment.NavHostFragment.*;
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +10,9 @@ import android.view.ViewGroup;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 public abstract class BaseFragment extends Fragment {
 
@@ -35,4 +39,8 @@ public abstract class BaseFragment extends Fragment {
     }
 
     public abstract void initView(final View view);
+
+    public void toolbarPopBackStack(final Toolbar toolbar) {
+        toolbar.setNavigationOnClickListener(e -> findNavController(this).navigateUp());
+    }
 }
