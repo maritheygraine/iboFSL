@@ -12,6 +12,6 @@ public class FeedbackFragment extends BaseFragment {
 
     @Override
     public void initView(View view) {
-        // do the same thing here tulad nung sa AboutFragment teh.
+        super.toolbarPopBackStack(view.findViewById(R.id.toolbar));
     }
 }

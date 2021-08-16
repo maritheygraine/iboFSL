@@ -8,18 +8,6 @@
     tools:context=".FingerspellingFragment">
 
     <!-- palitan mo ng toolbar to same sa fragment_about.xml then call mo sya -->
-    <ImageButton
-        android:id="@+id/back_btn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:src="@drawable/round_arrow_back_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.021" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_start"
@@ -41,13 +29,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="92dp"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/feedback_1"
         android:textColor="@color/black"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back_btn2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
@@ -106,7 +94,7 @@
         android:background="@drawable/custom_btn"
         android:elevation="6dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="@string/translate"
+        android:text="@string/publish"
         android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="@+id/text_input_layout"
         app:layout_constraintTop_toBottomOf="@+id/text_input_layout" />
@@ -135,5 +123,15 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline_start"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/round_arrow_back_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
