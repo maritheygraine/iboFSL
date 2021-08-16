@@ -1,6 +1,6 @@
 package com.techknow.bigkas.home;
 
-import static androidx.navigation.fragment.NavHostFragment.*;
+import static androidx.navigation.fragment.NavHostFragment.findNavController;
 
 import android.annotation.SuppressLint;
 import android.view.MenuItem;
@@ -9,7 +9,6 @@ import android.widget.PopupMenu;
 import android.widget.Toast;
 
 import androidx.annotation.IdRes;
-import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.techknow.bigkas.R;

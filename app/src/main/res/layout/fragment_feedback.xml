@@ -7,6 +7,7 @@
     android:background="@color/offwhite"
     tools:context=".FingerspellingFragment">
 
+    <!-- palitan mo ng toolbar to same sa fragment_about.xml then call mo sya -->
     <ImageButton
         android:id="@+id/back_btn2"
         android:layout_width="wrap_content"
