@@ -2,8 +2,6 @@ package com.techknow.bigkas;
 
 import android.view.View;
 
-import androidx.appcompat.widget.Toolbar;
-
 import com.techknow.bigkas.base.BaseFragment;
 
 public class AboutFragment extends BaseFragment {
