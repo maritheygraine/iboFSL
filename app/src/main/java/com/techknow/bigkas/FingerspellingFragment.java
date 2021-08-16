@@ -4,6 +4,8 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.core.util.Preconditions;
+
 import com.google.android.material.textfield.TextInputEditText;
 import com.techknow.bigkas.base.BaseFragment;
 
@@ -35,6 +37,7 @@ public class FingerspellingFragment extends BaseFragment {
 
     }
 
+    @SuppressWarnings("ConstantConditions")
     private static String getInputs(TextInputEditText editText) {
         return editText.getText().toString();
     }
