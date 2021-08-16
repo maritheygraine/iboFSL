@@ -46,11 +46,13 @@ public class HomeFragment extends BaseFragment implements MenuItem.OnMenuItemCli
             case R.id.nav_home:
                 changeFragment(R.id.home_to_about);
                 break;
-            case R.id.nav_recognition:
-                showToast("Check mo resource -> navigation folder -> nav_graph.xml");
+            case R.id.nav_version:
+                showToast("Bigkas version 1.0.0");
+                // showToast("Check mo resource -> navigation folder -> nav_graph.xml");
                 break;
             case R.id.nav_fingerspelling:
-                showToast("Then hover mo yung phone na may color green na + sign then add ka ng destination.");
+                changeFragment(R.id.home_to_feedback);
+                //showToast("Then hover mo yung phone na may color green na + sign then add ka ng destination.");
                 break;
         }
         return false;
