@@ -79,7 +79,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
 
-            android:id="@+id/edit_text"
+            android:id="@+id/feedback_edit_text"
             android:layout_width="match_parent"
             android:layout_height="240dp"
             android:maxLines="5" />
