@@ -42,5 +42,23 @@
         android:name="com.techknow.bigkas.FeedbackFragment"
         android:label="fragment_feedback"
         tools:layout="@layout/fragment_feedback" />
+    <fragment
+        android:id="@+id/homevideo"
+        android:name="com.techknow.bigkas.video.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" >
+        <action
+            android:id="@+id/action_homevideo_to_videoViewer"
+            app:destination="@id/videoViewer"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoViewer"
+        android:name="com.techknow.bigkas.VideoViewer"
+        android:label="fragment_video_viewer"
+        tools:layout="@layout/fragment_video_viewer" />
 
 </navigation>
