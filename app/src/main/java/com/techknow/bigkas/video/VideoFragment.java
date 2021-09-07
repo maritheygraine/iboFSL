@@ -16,7 +16,8 @@ import com.techknow.bigkas.base.BaseFragment;
 
 import static androidx.navigation.fragment.NavHostFragment.findNavController;
 
-public class VideoFragment extends BaseFragment implements ThumbnailClickListener{
+public class VideoFragment extends BaseFragment implements ThumbnailClickListener {
+
     public VideoFragment (){
         super(R.layout.fragment_video);
     }
@@ -33,7 +34,6 @@ public class VideoFragment extends BaseFragment implements ThumbnailClickListene
 
     @Override
     public void onThumbnailClick(Thumbnail thumbnail) {
-        //Toast.makeText(requireContext(), "thum"+thumbnail.getEng(), Toast.LENGTH_SHORT).show();
         changeFragment(R.id.action_homevideo_to_videoViewer);
     }
 
@@ -41,7 +41,4 @@ public class VideoFragment extends BaseFragment implements ThumbnailClickListene
         findNavController(this).navigate(navId);
     }
 
-}
-interface ThumbnailClickListener {
-    void onThumbnailClick(Thumbnail thumbnail);
 }

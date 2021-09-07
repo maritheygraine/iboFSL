@@ -5,7 +5,6 @@ import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,7 +14,7 @@ import com.techknow.bigkas.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder> {
+public class HomeAdapter extends RecyclerView.Adapter<HomeViewHolder> {
 
     private static final List<Integer> ITEMS = new ArrayList<Integer>() {
         {
@@ -29,7 +28,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
 
     @NonNull
     @Override
-    public HomeAdapter.HomeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public HomeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         this.context = parent.getContext();
 
         final LayoutInflater inflater = LayoutInflater.from(parent.getContext());
@@ -38,7 +37,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull HomeAdapter.HomeViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull HomeViewHolder holder, int position) {
         final Resources resources = context.getResources();
         holder.bind(resources.getString(ITEMS.get(position)));
     }
@@ -46,27 +45,5 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
     @Override
     public int getItemCount() {
         return ITEMS.size();
-    }
-
-    public static class HomeViewHolder extends RecyclerView.ViewHolder implements Binder {
-
-        private final TextView description;
-        private final TextView number;
-
-        public HomeViewHolder(@NonNull View itemView) {
-            super(itemView);
-            description = itemView.findViewById(R.id.description);
-            number = itemView.findViewById(R.id.number);
-        }
-
-        @Override
-        public void bind(String description) {
-            this.description.setText(description);
-            this.number.setText(String.valueOf(getAdapterPosition()+1));
-        }
-    }
-
-    interface Binder {
-        void bind(String description);
     }
 }
