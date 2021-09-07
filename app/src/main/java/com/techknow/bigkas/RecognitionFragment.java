@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 
 import com.techknow.bigkas.base.BaseFragment;
 
-public class Recognition extends BaseFragment {
+public class RecognitionFragment extends BaseFragment {
 
-   public Recognition() {
+   public RecognitionFragment() {
        super(R.layout.fragment_recognition);
    }
 

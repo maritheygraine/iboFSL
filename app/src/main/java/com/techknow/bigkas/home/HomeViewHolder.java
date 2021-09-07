@@ -23,6 +23,6 @@ public class HomeViewHolder extends RecyclerView.ViewHolder implements Binder<St
     @Override
     public void bind(String data) {
         this.description.setText(data);
-        this.number.setText(String.valueOf(getBindingAdapterPosition() + 1));
+        this.number.setText(String.valueOf(getAdapterPosition() + 1));
     }
 }

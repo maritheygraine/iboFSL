@@ -32,13 +32,17 @@ public class VideoFragment extends BaseFragment implements ThumbnailClickListene
     }
 
 
+
     @Override
-    public void onThumbnailClick(Thumbnail thumbnail) {
-        changeFragment(R.id.action_homevideo_to_videoViewer);
+    public void onThumbnailClick(int index) {
+        Bundle bundle = new Bundle();
+        bundle.putInt("index_positiion",index);
+
+        changeFragment(R.id.action_homevideo_to_videoViewer, bundle);
     }
 
-    private void changeFragment(@IdRes int navId) {
-        findNavController(this).navigate(navId);
+    private void changeFragment(@IdRes int navId, Bundle bundle) {
+        findNavController(this).navigate(navId, bundle);
     }
 
 }

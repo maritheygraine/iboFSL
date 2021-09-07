@@ -22,19 +22,11 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoViewHolder> {
 
     private final ThumbnailClickListener thumbnailClickListener;
 
+
     public VideoAdapter(ThumbnailClickListener listener) {
         thumbnailClickListener = listener;
     }
 
-    private static final List<Thumbnail> ITEMS = new ArrayList<Thumbnail>() {
-        {
-            add(new Thumbnail(R.drawable.samplehehe, "Hello", "Kumusta"));
-            add(new Thumbnail(R.drawable.samplehehe, "Hello", "Kumusta"));
-            add(new Thumbnail(R.drawable.samplehehe, "Hello", "Kumusta"));
-            add(new Thumbnail(R.drawable.samplehehe, "Hello", "Kumusta"));
-            add(new Thumbnail(R.drawable.samplehehe, "Hello", "Kumusta"));
-        }
-    };
 
     @NonNull
     @NotNull
@@ -48,13 +40,17 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull @NotNull VideoViewHolder holder, int position) {
-        final Thumbnail thumbnail = ITEMS.get(position);
+        final Thumbnail thumbnail = ThumbnailItems.ITEMS.get(position);
         holder.bind(thumbnail);
-        holder.itemView.setOnClickListener(v -> thumbnailClickListener.onThumbnailClick(thumbnail));
+        holder.itemView.setOnClickListener(v -> thumbnailClickListener.onThumbnailClick(holder.getAdapterPosition()));
+        //get pos of cllicked item
     }
 
     @Override
     public int getItemCount() {
-        return ITEMS.size();
+        return ThumbnailItems.ITEMS.size();
     }
 }
+
+
+
