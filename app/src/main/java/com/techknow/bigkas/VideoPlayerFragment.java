@@ -19,10 +19,7 @@ import com.techknow.bigkas.tutorial.ThumbnailItems;
 public class VideoPlayerFragment extends BaseFragment {
 
     private void setVideoViewer(VideoView videoView){
-        int index = getArguments().getInt("index_positiion");
-        final Thumbnail thumbnail = ThumbnailItems.ITEMS.get(index);
-
-        String videoPath = "android.resource://" + requireActivity().getPackageName() + "/" + thumbnail.getVideoId();
+        String videoPath = "android.resource://" + requireActivity().getPackageName() + "/" + thumbnailArgs().getVideoId();
         Uri uri = Uri.parse(videoPath);
         videoView.setVideoURI(uri);
 
@@ -37,6 +34,8 @@ public class VideoPlayerFragment extends BaseFragment {
                 mp.setLooping(true);
             }
         });
+
+        mediaController.hide();
     }
 
     public VideoPlayerFragment(){
@@ -48,14 +47,11 @@ public class VideoPlayerFragment extends BaseFragment {
         setVideoViewer(view.findViewById(R.id.videoPlayer));
         super.toolbarPopBackStack(view.findViewById(R.id.toolbar));
 
-        int index = getArguments().getInt("index_positiion");
-        final Thumbnail thumbnail = ThumbnailItems.ITEMS.get(index);
-
         TextView englishText = view.findViewById(R.id.english_trans);
         TextView filipinoText = view.findViewById(R.id.filipino_trans);
 
-        englishText.setText(thumbnail.getEng());
-        filipinoText.setText(thumbnail.getFil());
+        englishText.setText(thumbnailArgs().getEng());
+        filipinoText.setText(thumbnailArgs().getFil());
 
         view.findViewById(R.id.check_btn).setOnClickListener(e -> {
             changeFragment(R.id.videoFragment_to_recognition);
@@ -64,5 +60,11 @@ public class VideoPlayerFragment extends BaseFragment {
 
     private void changeFragment(@IdRes int navId) {
         findNavController(this).navigate(navId);
+    }
+
+    private Thumbnail thumbnailArgs() {
+        assert getArguments() != null;
+        int index = getArguments().getInt("index_positiion");
+        return ThumbnailItems.ITEMS.get(index);
     }
 }
