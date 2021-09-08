@@ -21,6 +21,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeViewHolder> {
             add(R.string.step_1);
             add(R.string.step_2);
             add(R.string.step_3);
+            add(R.string.step_4);
+            add(R.string.step_5);
         }
     };
 

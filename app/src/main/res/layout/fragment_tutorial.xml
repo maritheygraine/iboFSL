@@ -8,12 +8,16 @@
     android:orientation="vertical"
     tools:context=".home.HomeFragment">
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="12dp">
-
+            android:padding="12dp"
+            >
 
             <TextView
                 style="@style/TextAppearance.AppCompat.Large"
@@ -30,13 +34,13 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/video_list"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:nestedScrollingEnabled="false"
                 android:overScrollMode="never"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:spanCount="2"
                 tools:itemCount="15"
-                tools:listitem="@layout/video_steps_item" />
+                tools:listitem="@layout/tutorial_steps_item" />
         </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>

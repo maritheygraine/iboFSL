@@ -1,4 +1,4 @@
-package com.techknow.bigkas.video;
+package com.techknow.bigkas.tutorial;
 
 import com.techknow.bigkas.R;
 

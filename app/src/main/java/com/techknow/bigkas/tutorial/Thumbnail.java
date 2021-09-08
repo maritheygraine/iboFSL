@@ -1,4 +1,4 @@
-package com.techknow.bigkas.video;
+package com.techknow.bigkas.tutorial;
 
 public class Thumbnail {
     private final int drawable_id;

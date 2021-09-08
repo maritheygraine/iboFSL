@@ -1,25 +1,21 @@
-package com.techknow.bigkas.video;
+package com.techknow.bigkas.tutorial;
 
 import android.os.Bundle;
 
 import androidx.annotation.IdRes;
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.techknow.bigkas.R;
 import com.techknow.bigkas.base.BaseFragment;
 
 import static androidx.navigation.fragment.NavHostFragment.findNavController;
 
-public class VideoFragment extends BaseFragment implements ThumbnailClickListener {
+public class TutorialFragment extends BaseFragment implements ThumbnailClickListener {
 
-    public VideoFragment (){
-        super(R.layout.fragment_video);
+    public TutorialFragment(){
+        super(R.layout.fragment_tutorial);
     }
 
     @Override

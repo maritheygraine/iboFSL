@@ -8,8 +8,8 @@ import android.widget.TextView;
 import android.widget.VideoView;
 
 import com.techknow.bigkas.base.BaseFragment;
-import com.techknow.bigkas.video.Thumbnail;
-import com.techknow.bigkas.video.ThumbnailItems;
+import com.techknow.bigkas.tutorial.Thumbnail;
+import com.techknow.bigkas.tutorial.ThumbnailItems;
 
 public class VideoPlayerFragment extends BaseFragment {
 

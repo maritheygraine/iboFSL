@@ -1,4 +1,4 @@
-package com.techknow.bigkas.video;
+package com.techknow.bigkas.tutorial;
 
 interface ThumbnailClickListener {
     void onThumbnailClick(int index);

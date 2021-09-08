@@ -1,4 +1,4 @@
-package com.techknow.bigkas.video;
+package com.techknow.bigkas.tutorial;
 
 import android.view.View;
 import android.widget.ImageView;

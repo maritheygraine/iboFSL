@@ -18,7 +18,7 @@
 
     <item
         android:id="@+id/homevideo"
-        android:title="Videos"
+        android:title="Tutorial"
         android:icon="@drawable/round_video_library_24"/>
 
 </menu>
