@@ -16,11 +16,11 @@ public class HomeContentItems {
 
     public static final List<HomeContent> ITEMS = new ArrayList<HomeContent>() {
         {
-            add(new HomeContent(R.drawable.round_camera_24, R.string.step_1));
-            add(new HomeContent(R.drawable.samplehehe, R.string.step_2));
-            add(new HomeContent(R.drawable.samplehehe, R.string.step_3));
-            add(new HomeContent(R.drawable.samplehehe, R.string.step_4));
-            add(new HomeContent(R.drawable.samplehehe, R.string.step_5));
+            add(new HomeContent(R.drawable.round_camera_24_purple, R.string.step_1));
+            add(new HomeContent(R.drawable.round_emoji_people_24, R.string.step_2));
+            add(new HomeContent(R.drawable.round_keyboard_alt_24_purple, R.string.step_3));
+            add(new HomeContent(R.drawable.round_video_library_24_purple, R.string.step_4));
+            add(new HomeContent(R.drawable.round_check_circle_24, R.string.step_5));
         }
     };
 
