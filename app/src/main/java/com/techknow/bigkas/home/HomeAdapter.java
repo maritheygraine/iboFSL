@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,16 +16,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeViewHolder> {
-
-    private static final List<Integer> ITEMS = new ArrayList<Integer>() {
-        {
-            add(R.string.step_1);
-            add(R.string.step_2);
-            add(R.string.step_3);
-            add(R.string.step_4);
-            add(R.string.step_5);
-        }
-    };
 
     private Context context;
 
@@ -40,12 +31,13 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull HomeViewHolder holder, int position) {
-        final Resources resources = context.getResources();
-        holder.bind(resources.getString(ITEMS.get(position)));
+        final HomeContent homeContent = HomeContentItems.ITEMS.get(position);
+        holder.bind(homeContent);
+
     }
 
     @Override
     public int getItemCount() {
-        return ITEMS.size();
+        return HomeContentItems.ITEMS.size();
     }
 }
