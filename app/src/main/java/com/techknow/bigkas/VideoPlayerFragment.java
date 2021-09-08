@@ -1,11 +1,16 @@
 package com.techknow.bigkas;
 
+import static androidx.navigation.fragment.NavHostFragment.findNavController;
+
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.view.View;
+import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
+
+import androidx.annotation.IdRes;
 
 import com.techknow.bigkas.base.BaseFragment;
 import com.techknow.bigkas.tutorial.Thumbnail;
@@ -52,6 +57,12 @@ public class VideoPlayerFragment extends BaseFragment {
         englishText.setText(thumbnail.getEng());
         filipinoText.setText(thumbnail.getFil());
 
+        view.findViewById(R.id.check_btn).setOnClickListener(e -> {
+            changeFragment(R.id.videoFragment_to_recognition);
+        });
+    }
 
+    private void changeFragment(@IdRes int navId) {
+        findNavController(this).navigate(navId);
     }
 }

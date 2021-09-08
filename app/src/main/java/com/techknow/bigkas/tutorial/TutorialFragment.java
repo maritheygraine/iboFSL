@@ -34,7 +34,7 @@ public class TutorialFragment extends BaseFragment implements ThumbnailClickList
         Bundle bundle = new Bundle();
         bundle.putInt("index_positiion",index);
 
-        changeFragment(R.id.action_homevideo_to_videoViewer, bundle);
+        changeFragment(R.id.homevideo_to_videoViewer, bundle);
     }
 
     private void changeFragment(@IdRes int navId, Bundle bundle) {

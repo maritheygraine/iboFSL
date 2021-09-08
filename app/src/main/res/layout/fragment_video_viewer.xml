@@ -57,7 +57,7 @@
         android:textColor="@color/black" />
 
     <Button
-        android:id="@+id/translate_btn"
+        android:id="@+id/check_btn"
         android:layout_width="match_parent"
         android:layout_height="43dp"
         android:layout_marginTop="20dp"
