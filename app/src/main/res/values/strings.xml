@@ -6,12 +6,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="developer_description">TechKnow is a group of like-minded individuals committed to excellence and aims to connect people together through the use of technology.</string>
-    <string name="bigkas_description">Bigkas is an Android application that outputs the detected Filipino Sign Language in real time and displays the corresponding fingerspelling for the text entered.</string>
-    <string name="step_1">Open Bigkas application and select the scan button.</string>
-    <string name="step_2">Position the camera at waist level to start the detection. Upon successful detection, the text and speech output will be displayed.</string>
+    <string name="bigkas_description">IBO is an Android application that outputs the detected Filipino Sign Language in real time and displays the corresponding fingerspelling for the text entered.</string>
+    <string name="step_1">Open IBO application and select the scan button.</string>
+    <string name="step_2">Position the camera at waist level to start the detection. Upon successful detection, the text will be displayed.</string>
     <string name="step_3">To translate words into its corresponding fingerspelling, input the text to be translated.</string>
-    <string name="bigkas">Bigkas.</string>
-    <string name="how_to_use_bigkas">How to use Bigkas?</string>
+    <string name="ibo">IBO.</string>
+    <string name="how_to_use_ibo">How to use IBO?</string>
     <string name="contact_us">Contact Us</string>
     <string name="techknow_feutech_gmail_com">techknow.feutech@gmail.com</string>
     <string name="developer">Developer</string>
@@ -35,4 +35,5 @@
     <string name="feedback_4">Your review means a lot to us and we will improve based on this.</string>
     <string name="publish">Publish Feedback</string>
     <string name="fifteenword">15 words</string>
+    <string name="check_your_gegsture">Check your Gesture</string>
 </resources>

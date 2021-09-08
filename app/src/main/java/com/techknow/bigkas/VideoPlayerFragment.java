@@ -1,5 +1,6 @@
 package com.techknow.bigkas;
 
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.view.View;
 import android.widget.MediaController;
@@ -24,6 +25,13 @@ public class VideoPlayerFragment extends BaseFragment {
         videoView.setMediaController(mediaController);
         mediaController.setAnchorView(videoView);
         videoView.start();
+        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.setVolume(0,0);
+                mp.setLooping(true);
+            }
+        });
     }
 
     public VideoPlayerFragment(){
