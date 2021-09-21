@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Bigkas</string>
-    <string name="ob_1">Connect with our Deaf friends through Bigkas\' FSL to Voice Translation.</string>
-    <string name="ob_2">Wow! Great Detection. Express your \nFSL and Bigkas will detect it.</string>
-    <string name="ob_3">I can do it too. Talk to our Deaf friends \nwith Bigkas\' implementation of  \nFingerspelling.</string>
+    <string name="app_name">IBO</string>
+    <string name="ob_1">Connect with our Deaf friends through IBO\'s FSL detector.</string>
+    <string name="ob_2">Wow! Great Detection. Express your \nFSL and IBO will detect it.</string>
+    <string name="ob_3">I can do it too. Talk to our Deaf friends \nwith IBO\'s implementation of  \nFingerspelling.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="developer_description">TechKnow is a group of like-minded individuals committed to excellence and aims to connect people together through the use of technology.</string>
