@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">IBO</string>
+    <string name="fsl_translator">FSL Translator</string>
     <string name="ob_1">Connect with our Deaf friends through IBO\'s FSL detector.</string>
     <string name="ob_2">Wow! Great Detection. Express your \nFSL and IBO will detect it.</string>
     <string name="ob_3">I can do it too. Talk to our Deaf friends \nwith IBO\'s implementation of  \nFingerspelling.</string>
@@ -12,7 +13,7 @@
     <string name="step_3">To translate into fingerspelling, simply input the text to be translated</string>
     <string name="step_4">Tap the Tutorial button and choose from the 15 words you want to learn the gesture and Filipino translation. </string>
     <string name="step_5">You can also check whether the gestures you have done is correct through the Check the Gesture button.</string>
-    <string name="ibo">IBO.</string>
+    <string name="ibo">IBO</string>
     <string name="how_to_use_ibo">How to use IBO?</string>
     <string name="contact_us">Contact Us</string>
     <string name="techknow_feutech_gmail_com">techknow.feutech@gmail.com</string>
@@ -28,8 +29,7 @@
     <string name="clear">Clear</string>
     <string name="translate">Translate</string>
     <string name="write_something">Write something</string>
-    <string name="translator">Translator</string>
-    <string name="fingerspelling_formal">Fingerspelling</string>
+    <string name="fingerspelling_formal">Fingerspelling Translator</string>
     <string name="fingerspell">Fingerspell</string>
     <string name="feedback_1">Give Feedback</string>
     <string name="feedback_2">How did we do?</string>
