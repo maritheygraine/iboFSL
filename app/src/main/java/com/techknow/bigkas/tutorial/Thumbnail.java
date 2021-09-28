@@ -1,6 +1,9 @@
 package com.techknow.bigkas.tutorial;
 
 public class Thumbnail {
+    /**
+     * Method used to get the ID of the textviews.
+     */
     private final String eng;
     private final String fil;
     private final int videoId;

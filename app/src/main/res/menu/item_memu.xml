@@ -4,7 +4,7 @@
         android:title="About Us" />
     <item android:id="@+id/nav_version"
         android:title="Version" />
-    <item android:id="@+id/nav_fingerspelling"
+    <item android:id="@+id/nav_sendfeedback"
         android:title="Send Feedback" />
 
 </menu>

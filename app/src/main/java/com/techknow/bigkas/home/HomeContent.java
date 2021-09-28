@@ -1,6 +1,9 @@
 package com.techknow.bigkas.home;
 
 public class HomeContent {
+    /**
+     * Method used to get the ID of picture and description.
+     */
     private final int picture_id;
     private final int data;
 

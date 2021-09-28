@@ -31,6 +31,9 @@ public class TutorialFragment extends BaseFragment implements ThumbnailClickList
 
     @Override
     public void onThumbnailClick(int index) {
+        /**
+         * Changes the fragment when a container is clicked.
+         */
         Bundle bundle = new Bundle();
         bundle.putInt("index_positiion",index);
 

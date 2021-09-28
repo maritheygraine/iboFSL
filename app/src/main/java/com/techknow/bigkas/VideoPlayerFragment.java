@@ -19,10 +19,18 @@ import com.techknow.bigkas.tutorial.ThumbnailItems;
 public class VideoPlayerFragment extends BaseFragment {
 
     private void setVideoViewer(VideoView videoView){
+        /**
+         * Gets video path
+         */
         String videoPath = "android.resource://" + requireActivity().getPackageName() + "/" + thumbnailArgs().getVideoId();
         Uri uri = Uri.parse(videoPath);
         videoView.setVideoURI(uri);
 
+        /**
+         * Methods and setting for media player.
+         * Looped video is on and volume is muted.
+         * Play/Pause controller is hidden.
+         */
         MediaController mediaController = new MediaController(requireContext());
         videoView.setMediaController(mediaController);
         mediaController.setAnchorView(videoView);
@@ -50,9 +58,16 @@ public class VideoPlayerFragment extends BaseFragment {
         TextView englishText = view.findViewById(R.id.english_trans);
         TextView filipinoText = view.findViewById(R.id.filipino_trans);
 
+        /**
+         * Sets the textview with the index's content.
+         */
         englishText.setText(thumbnailArgs().getEng());
         filipinoText.setText(thumbnailArgs().getFil());
 
+        /**
+         * When the check button is clicked,the videoplayer will redirect to the
+         * recognition module
+         */
         view.findViewById(R.id.check_btn).setOnClickListener(e -> {
             changeFragment(R.id.videoFragment_to_recognition);
         });
@@ -63,6 +78,10 @@ public class VideoPlayerFragment extends BaseFragment {
     }
 
     private Thumbnail thumbnailArgs() {
+        /**
+         * Gets the index of container clicked
+         * then sets the textview with the index's content.
+         */
         assert getArguments() != null;
         int index = getArguments().getInt("index_positiion");
         return ThumbnailItems.ITEMS.get(index);

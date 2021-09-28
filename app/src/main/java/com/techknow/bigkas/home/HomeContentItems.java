@@ -10,9 +10,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HomeContentItems {
+    /**
+     * Content of the array.
+     */
     Context context;
     Resources resources;
-
 
     public static final List<HomeContent> ITEMS = new ArrayList<HomeContent>() {
         {

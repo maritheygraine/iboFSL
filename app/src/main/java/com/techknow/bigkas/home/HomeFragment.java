@@ -15,13 +15,20 @@ import com.techknow.bigkas.R;
 import com.techknow.bigkas.base.BaseFragment;
 
 public class HomeFragment extends BaseFragment implements MenuItem.OnMenuItemClickListener {
-
+    /**
+     * This is the main view of the module Home. Where in the user can see
+     * the manual of the app, techknow's description and contact information,
+     * verson of the app, and the send feedback form
+     */
     public HomeFragment() {
         super(R.layout.fragment_home);
     }
 
     @Override
     public void initView(View view) {
+        /**
+         * Puts each content into their respective layout.
+         */
         setBigkasList(view.findViewById(R.id.bigkas_list));
         setPopupMenu(view.findViewById(R.id.hamburger));
     }
@@ -31,6 +38,10 @@ public class HomeFragment extends BaseFragment implements MenuItem.OnMenuItemCli
     }
 
     private void setPopupMenu(final View hamburger) {
+        /**
+         * Inflate the content of the popup menu.
+         * Show menu when clicked.
+         */
         final PopupMenu menu = new PopupMenu(requireContext(), hamburger);
         menu.inflate(R.menu.item_memu);
         menu.setOnMenuItemClickListener(this::onMenuItemClick);
@@ -40,7 +51,9 @@ public class HomeFragment extends BaseFragment implements MenuItem.OnMenuItemCli
     @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onMenuItemClick(MenuItem menuItem) {
-        // dito mo lagay yung mga ipapalabas mo na items
+        /**
+         * This is used to change Fragments and show contents inside the popup menu.
+         */
         switch (menuItem.getItemId()) {
             case R.id.nav_home:
                 changeFragment(R.id.home_to_about);
@@ -49,9 +62,8 @@ public class HomeFragment extends BaseFragment implements MenuItem.OnMenuItemCli
                 showToast("Bigkas version 1.0.0");
                 // showToast("Check mo resource -> navigation folder -> nav_graph.xml");
                 break;
-            case R.id.nav_fingerspelling:
+            case R.id.nav_sendfeedback:
                 changeFragment(R.id.home_to_feedback);
-                //showToast("Then hover mo yung phone na may color green na + sign then add ka ng destination.");
                 break;
         }
         return false;

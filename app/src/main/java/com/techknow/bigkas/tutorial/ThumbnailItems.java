@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ThumbnailItems {
+    /**
+     * Content of the array.
+     */
     public static final List<Thumbnail> ITEMS = new ArrayList<Thumbnail>() {
         {
             add(new Thumbnail("Hello", "Kumusta", R.raw.hello));

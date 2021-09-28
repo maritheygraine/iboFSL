@@ -13,7 +13,9 @@ import com.techknow.bigkas.base.Binder;
 import org.jetbrains.annotations.NotNull;
 
 public class VideoViewHolder extends RecyclerView.ViewHolder implements Binder<Thumbnail> {
-
+    /**
+     * Find the textviews layout.
+     */
     private final TextView endCap;
     private final TextView filCap;
 

@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupNavBar() {
+        /**
+         * Buttom navigation
+         */
         final PopupMenu popupMenu = new PopupMenu(this, null);
         popupMenu.inflate(R.menu.nav_menu);
 
