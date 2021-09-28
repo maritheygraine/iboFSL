@@ -16,9 +16,9 @@ import com.techknow.bigkas.base.BaseFragment;
 
 public class HomeFragment extends BaseFragment implements MenuItem.OnMenuItemClickListener {
     /**
-     * This is the main view of the module Home. Where in the user can see
-     * the manual of the app, techknow's description and contact information,
-     * verson of the app, and the send feedback form
+     * This is the main view of the module Home wherein the user can see
+     * the manual of the app, Techknow's description and contact information,
+     * version of the app, and the send feedback form
      */
     public HomeFragment() {
         super(R.layout.fragment_home);

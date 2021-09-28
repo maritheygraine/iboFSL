@@ -12,7 +12,7 @@ import com.techknow.bigkas.base.Binder;
 
 public class HomeViewHolder extends RecyclerView.ViewHolder implements Binder<HomeContent> {
     /**
-     * Find the textview and imageview in the layout.
+     * Finds the textview and imageview in the layout.
      */
     private final TextView description;
     private final ImageView number;
