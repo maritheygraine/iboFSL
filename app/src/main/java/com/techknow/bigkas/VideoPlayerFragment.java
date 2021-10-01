@@ -2,6 +2,7 @@ package com.techknow.bigkas;
 
 import static androidx.navigation.fragment.NavHostFragment.findNavController;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.view.View;
@@ -69,7 +70,7 @@ public class VideoPlayerFragment extends BaseFragment {
          * recognition module
          */
         view.findViewById(R.id.check_btn).setOnClickListener(e -> {
-            changeFragment(R.id.videoFragment_to_recognition);
+            startActivity(new Intent(getContext(), DetectorActivity.class));
         });
     }
 

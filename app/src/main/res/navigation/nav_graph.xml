@@ -21,12 +21,6 @@
     </fragment>
 
     <fragment
-        android:id="@+id/recognition"
-        android:name="com.techknow.bigkas.RecognitionFragment"
-        android:label="fragment_recognition"
-        tools:layout="@layout/fragment_recognition" />
-
-    <fragment
         android:id="@+id/fingerspelling"
         android:name="com.techknow.bigkas.FingerspellingFragment"
         android:label="fragment_fingerspelling"
@@ -59,10 +53,10 @@
         android:id="@+id/videoFragment"
         android:name="com.techknow.bigkas.VideoPlayerFragment"
         android:label="fragment_video_viewer"
-        tools:layout="@layout/fragment_video_viewer" >
-        <action
-            android:id="@+id/videoFragment_to_recognition"
-            app:destination="@id/recognition" />
-    </fragment>
+        tools:layout="@layout/fragment_video_viewer" />
+    <activity
+        android:id="@+id/recognition"
+        android:name="com.techknow.bigkas.DetectorActivity"
+        android:label="recognition" />
 
 </navigation>
