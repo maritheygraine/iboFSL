@@ -11,6 +11,7 @@ import com.techknow.bigkas.base.BaseFragment;
 
 public class FingerspellingFragment extends BaseFragment {
 
+
     public FingerspellingFragment() {
         super(R.layout.fragment_fingerspelling);
     }
