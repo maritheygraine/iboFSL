@@ -13,7 +13,6 @@
     <string name="step_2">Position the camera at waist level to start the detection. Upon successful detection, the text will be displayed.</string>
     <string name="step_3">To translate into fingerspelling, simply input the text to be translated</string>
     <string name="step_4">Tap the Tutorial button and choose from the 15 words you want to learn the gesture and Filipino translation. </string>
-    <string name="step_5">You can also check whether the gestures you have done is correct through the Check the Gesture button.</string>
     <string name="ibo">IBO</string>
     <string name="how_to_use_ibo">How to use IBO?</string>
     <string name="contact_us">Contact Us</string>

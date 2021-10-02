@@ -22,7 +22,6 @@ public class HomeContentItems {
             add(new HomeContent(R.drawable.round_emoji_people_24, R.string.step_2));
             add(new HomeContent(R.drawable.round_keyboard_alt_24_purple, R.string.step_3));
             add(new HomeContent(R.drawable.round_video_library_24_purple, R.string.step_4));
-            add(new HomeContent(R.drawable.round_check_circle_24, R.string.step_5));
         }
     };
 
