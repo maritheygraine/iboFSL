@@ -64,14 +64,6 @@ public class VideoPlayerFragment extends BaseFragment {
          */
         englishText.setText(thumbnailArgs().getEng());
         filipinoText.setText(thumbnailArgs().getFil());
-
-        /**
-         * When the check button is clicked,the videoplayer will redirect to the
-         * recognition module
-         */
-        view.findViewById(R.id.check_btn).setOnClickListener(e -> {
-            startActivity(new Intent(getContext(), DetectorActivity.class));
-        });
     }
 
     private void changeFragment(@IdRes int navId) {

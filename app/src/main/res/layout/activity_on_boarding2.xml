@@ -22,16 +22,16 @@
 
     <ImageView
         android:id="@+id/ob1_pic"
-        android:layout_width="280dp"
+        android:layout_width="300dp"
         android:layout_height="280dp"
         android:layout_marginStart="33dp"
-        app:layout_constraintVertical_bias="0.18"
-        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ob_2" />
+        app:layout_constraintVertical_bias="0.18"
+        app:srcCompat="@drawable/ob2_pic_new" />
 
     <TextView
         android:id="@+id/lets"
