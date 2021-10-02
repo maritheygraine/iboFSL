@@ -59,7 +59,7 @@ public class HomeFragment extends BaseFragment implements MenuItem.OnMenuItemCli
                 changeFragment(R.id.home_to_about);
                 break;
             case R.id.nav_version:
-                showToast("Bigkas version 1.0.0");
+                showToast("IBO version 1.0.0");
                 // showToast("Check mo resource -> navigation folder -> nav_graph.xml");
                 break;
             case R.id.nav_sendfeedback:
