@@ -20,7 +20,7 @@ public class ThumbnailItems {
             add(new Thumbnail("Welcome", "Walang anuman", R.raw.welcome));
             add(new Thumbnail("Name", "Pangalan", R.raw.name));
             add(new Thumbnail("Help", "Tulong/Tulungan", R.raw.help));
-            add(new Thumbnail("Eat", "Kain/Kumain", R.raw.eat));
+            add(new Thumbnail("Eat", "Kain/Kumain", R.raw.eat_new));
             add(new Thumbnail("This", "Ito", R.raw.this_sign));
             add(new Thumbnail("Sorry", "Paumanhin/Pasensya ", R.raw.sorry));
             add(new Thumbnail("Stand", "Tumayo/Tumindig", R.raw.stand));
